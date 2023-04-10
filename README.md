@@ -1,4 +1,4 @@
-GPT-driven simluation of a debate between multiple AI agents
+GPT-driven simulation of a debate between multiple AI agents
 ===
 
 # Introduction
