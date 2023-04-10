@@ -10,6 +10,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --upgrade pip
 #&& pip install -r /requirements.txt
 RUN pip install python-dotenv
+RUN pip install tenacity
 RUN pip install flake8
 RUN pip install openai
 RUN pip install jupyterlab

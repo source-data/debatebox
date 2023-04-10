@@ -1,5 +1,6 @@
 from typing import List, Dict
 import openai
+from tenacity import retry, wait_random_exponential, stop_after_attempt
 
 from .constitution import (
     MODEL,
@@ -40,10 +41,7 @@ class ChatBox():
         # figure out the entry point in the chat to provide context
         idx = max(len(self.chat) - self.context_length, 0)
         context = self.chat[idx:]
-        response = self.engine.create(
-            model=self.model,
-            messages=context
-        )
+        response = self.call_model(context)
         # extract the content of the response
         content = self.process_response(response)  # type: ignore
         # log the response in the chat
@@ -51,6 +49,14 @@ class ChatBox():
         if self.verbose:
             wrapped_print(f'INTERNAL OUTPUT: {self.chat[-1]["role"]}', self.chat[-1]["content"], indent=4)
         return content
+
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    def call_model(self, context: List[Dict[str, str]]):
+        response = self.engine.create(
+            model=self.model,
+            messages=context
+        )
+        return response
 
     def self_improve(self, steps: List[str]) -> Dict[str, str]:
         # Simple implementation of 'constitutional AI. 
