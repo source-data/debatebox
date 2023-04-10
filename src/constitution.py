@@ -16,17 +16,29 @@ PRINCIPLES = {
     "scientist_two": [
         {
             "critique": "Does you reply include a critical analysis of the science and the feasibility of the suggested approach?",
-            "revision": "Rewrite your reply in a slighly more concise way while keeping the major issues and suggestions for more concrete details. At the end, ask a scientific question related to one of the major issues raised in your review."
+            "revision": "Rewrite your reply in a slightly more concise way while keeping the major issues and suggestions for more concrete details. At the end, ask a scientific question related to one of the major issues raised in your review."
         }
     ],
     "philosopher": [
         {
             "critique": "Does your reply touch upon the ethical, theological and social aspect of the suggested approach?",
-            "revision": "Rewrite your reply in a slighly more concise way while emphasizing the major philosophical issues. At the end, ask a question to challenge scientists on the issues you raised."
+            "revision": "Rewrite your reply in a slightly more concise way while emphasizing the major philosophical issues. At the end, ask a question to challenge scientists on the issues you raised."
         },
-    ]
+    ],
+    "politician": [
+        {
+            "critique": "Does your reply include concrete proposals and attractive policies that appeal to a broad audience?",
+            "revision": "Rewrite your reply in a slightly more concise way to put forward a simple message that is understood by anyone. At the end, ask a question to ask scientists to propose technical implementation."
+        },
+    ],
+    "moderator": [
+        {
+            "critique": "Does your reply propose a new direction for the conversation?",
+            "revision": "Rewrite your repy in a slightly more concise way and if appropriate suggest a new angle to continue the debate.",
+        },
+    ],
 }
 
-MODEL = "gpt-3.5-turbo"
+MODEL = "gpt-3.5-turbo"  # "gpt-4"
 
 CONTEXT_LENGTH = 10
