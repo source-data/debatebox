@@ -70,6 +70,10 @@ Note that the same underlying model (GPT-4 or GPT-3.5) is used for all the agent
 
 # Installation:
 
+
+Update `.env.example` with your openai credentials for the chatGPT/GPT-4 API.
+
+
 ```bash
 docker-compose build
 docker-compose up -d
