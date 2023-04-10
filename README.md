@@ -15,7 +15,7 @@ We use concepts from "consitutional AI" (Bai et al 20221, Constitutional AI: Har
 
 To facilitate experimentation we have predefined a number of characters and associated principles in `constitution.py`: two kinds of scientists and a philosopher. Their system prompts describe their key attributes:
 
-```
+```python
 CHARACTERS = {
     "scientist_one": "You are an imaginative scientist who thinks out of the box to solve difficult problems.",
     "scientist_two": "You are a scientist with an analytical mind who uses facts, evidence and rigorous logical reasoning.",
@@ -25,7 +25,7 @@ CHARACTERS = {
 
 Each character is linked to a set of principles characterized by a critique and a revision guideline. To simplify the demonstration, we have a single principle per chatracter, but this could be extended to cover more aspects of the reply:
 
-```
+```python
 PRINCIPLES = {
     "scientist_one": [
         {
@@ -52,7 +52,7 @@ The engineering of these prompts is somewhat tricky and the dynamics of the deba
 
 The debate is initiated with a seed topic that will serve as prompt to the first agent. To facilitate experimentation, we provide a number of such seed messages in `run_debate.py`:
 
-```
+```python
 SEED_MESSAGES = {
     "human_intelligence_evolution": "What are the explanations of the emergence of human intelligence",
     "cryptocurrencies": "Have crytocurrencies such as Bitcoin any value?",
@@ -70,19 +70,18 @@ Note that the same underlying model (GPT-4 or GPT-3.5) is used for all the agent
 
 # Installation:
 
-````
+```bash
 docker-compose build
 docker-compose up -d
 ```
 
 # Demonstrations
 
-A demonstration notebook is available in `notebooks`.
-
+A demonstration Jupyter-lab notebook is available in `notebooks/`.
 
 Simple demos with the command line interface:
 
-```
+```bash
 docker-compose exec debatebox bash
 
 python -m src.run_debate --help
