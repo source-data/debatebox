@@ -3,15 +3,15 @@ GPT-driven simluation of a debate between multiple AI agents
 
 # Introduction
 
-The discussion of the strength and weaknesses of large languge models such as chatGPT or GPT-4 have often been  constrained by considering the capabilities of such models in isolation. 
+The discussion of the strengths and weaknesses of large language models such as chatGPT or GPT-4 have often been  constrained by considering the capabilities of such models in isolation. 
 
-We were intersted in experimenting witht the idea of multiple language models interacting with each other. What dynamics can be expected from such interactions? Will the conversation diverge and degenerate? Will it rather converge into a boring unproductive stalemate? Can an adversarial or controversial debate guide the models into creative modes? 
+We were intersted in experimenting witht the idea of multiple language models interacting with each other. What dynamics can be expected from such interactions? Will the conversation diverge and degenerate? Will it rather converge into a boring unproductive stalemate? Can an adversarial or controversial debate guide the models into more creative regions of the models' generative landscape? 
 
-Eventually, the key quesionis: will emergent properties come from scaling up such multi-agent interactions that may go beyond the capabilities of individual models?
+Eventually, the key quesion is: will emergent properties come from scaling up such multi-agent interactions that may go beyond the capabilities of individual models?
 
-As a toy example of this idea, we simulate here a dialog between several protagonists. We use three characters, two scientists and a philosopher. Each character has its own "system" prompt that is provided to the model to guide its responses.
+As a toy example of this idea, we simulate here a dialog between several protagonists simulated by chatGPT or GPT-4. We use three "characters", two "scientists" and a "philosopher". Each character is described by its own GPT "system" prompt that is provided to the model to guide its responses.
 
-We use principle from "consitutional AI" to associate each characters with a set of principles that encourages the model to first produce a self-critique of the first draft of its reponse and then requests a revision to improve the reply before delivering it to the next agent. To keep the debate going, the model is requested to add a question at the end of its reply so that the next agent is prompted to produce a reply in turn.
+We use concepts from "consitutional AI" (Bai et al 20221, Constitutional AI: Harmlessness from AI Feedback, [arXiv:2212.08073](https://doi.org/10.48550/arXiv.2212.08073)) to associate each characters with a set of "principles" that encourage the model to self-improve its reply. First, it is requested to produce a self-critique of the first draft of its reponse. In a second step, revision is requested before delivering the final reply to the next agent. To keep the debate going, the model is asked to add a question at the end of its reply so that the next agent is prompted to produce a reply in turn.
 
 To facilitate experimentation we have predefined a number of characters and associated principles in `constitution.py`: two kinds of scientists and a philosopher. Their system prompts describe their key attributes:
 
