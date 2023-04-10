@@ -10,8 +10,7 @@ services:
     - ./.env
     volumes: &volumes
     - ./src:/app/src
-    - ./data:/data
-    - ./log:/log
+    - ./examples:/app/examples
     - ./notebooks:/app/notebooks
     - vs_server:/root/.vscode-server
     - cache:/root/.cache  # general cache

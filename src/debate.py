@@ -1,31 +1,29 @@
 from typing import List, Dict
+from datetime import datetime
 from .chatbox import ChatBox
 from .constitution import MODEL
-from .utils import wrapped_print
+from .lib.utils import wrapped_print
 
 
 class Debate:
     def __init__(self, protagonists: List[str]):
         # initialize the chat boxes
         self.protagonists = [ChatBox(character=p) for p in protagonists]
-        # a default seed message content for demo
-        self.seed_content = {
-            "role": "user",
-            "content": "What is the most likely explanation for the emergence of human intelligence?"
-        }
 
-    def run(self, seed_content: str = "", max_rounds: int = 2, steps: List[str] = ["critique", "revision"], verbose: bool = False):
+    def run(self, seed_content, max_rounds: int = 2, steps: List[str] = ["critique", "revision"], verbose: bool = False):
         # set level of verbosity
         for p in self.protagonists:
             p.verbose = verbose
         # initialize the first message that will trigger the debate
         msg = {
             "role": "user",
-            "content": seed_content if seed_content else self.seed_content
+            "content": seed_content
         }
-        print(f"This debate is run with: {MODEL}\n")
+        print(f"{datetime.isoformat(datetime.now())}: This debate is run with: {MODEL}\n")
         wrapped_print("framing", seed_content)
         self.debating_loop(msg, max_rounds, steps)
+        for p in self.protagonists:
+            self.dump(p)
 
     def debating_loop(self, seed_message, max_rounds, steps):
         # frame the debate with the seed message
@@ -45,9 +43,11 @@ class Debate:
         output_msg = character.reply(input_msg, steps=steps)
         return output_msg
 
-    def dump(self, idx: int):
-        chat_box = self.protagonists[idx]
+    def dump(self, chat_box: ChatBox, include_chat: bool = False):
         print(chat_box.character)
+        print(chat_box.system_content)
         print(chat_box.principles)
-        for message in chat_box.chat:
-            wrapped_print(message["role"], message["content"])
+        print("\n------------------\n")
+        if include_chat:
+            for m in chat_box.chat:
+                wrapped_print(m["role"], m["content"])

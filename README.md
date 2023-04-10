@@ -11,7 +11,9 @@ Eventually, the key quesion is: will emergent properties come from scaling up su
 
 As a toy example of this idea, we simulate here a dialog between several protagonists simulated by chatGPT or GPT-4. We use three "characters", two "scientists" and a "philosopher". Each character is described by its own GPT "system" prompt that is provided to the model to guide its responses.
 
-We use concepts from "consitutional AI" (Bai et al 20221, Constitutional AI: Harmlessness from AI Feedback, [arXiv:2212.08073](https://doi.org/10.48550/arXiv.2212.08073)) to associate each characters with a set of "principles" that encourage the model to self-improve its reply. First, it is requested to produce a self-critique of the first draft of its reponse. In a second step, revision is requested before delivering the final reply to the next agent. To keep the debate going, the model is asked to add a question at the end of its reply so that the next agent is prompted to produce a reply in turn.
+We use concepts from "consitutional AI" (Bai et al 20221, Constitutional AI: Harmlessness from AI Feedback, [arXiv:2212.08073](https://doi.org/10.48550/arXiv.2212.08073)) and few-shot prompting to setup our debating simulation. In the original work by Anhtropic, a set of 'constitutional principles', written in natural language, were used to align the responses of a model in a transparent self-improving process. The principles were used by the model to self-criticize and then revise its responses. This process openened the door to the automated generation of a large-scale alignment dataset that can in turn be used to further fine tune the initial model by Reinforcement Learning with AI Feedback.
+
+Here, we use similar concepts albeit at a much more modest scale and without model realignement. Each character is associated with a set of "principles" that encourage the model to self-improve its reply. First, it is requested to produce a self-critique of the first draft of its reponse. In a second step, revision is requested before delivering the final reply to the next agent. To keep the debate going, the model is asked to add a question at the end of its reply so that the next agent is prompted to produce a reply in turn.
 
 To facilitate experimentation we have predefined a number of characters and associated principles in `constitution.py`: two kinds of scientists and a philosopher. Their system prompts describe their key attributes:
 
@@ -65,7 +67,9 @@ SEED_MESSAGES = {
 }
 ```
 
-Note that the same underlying model (GPT-4 or GPT-3.5) is used for all the agents. They are therefore all aligned in the same way. Future work may explore the impact of using divergently aligned models and scaling up the debate in terms of the number and diversity of the agents involved and the length of the debate. It remains to be seen how the results of such debates can be evaluate and compared to detect potential emerging properties. Mayb a start is to ask the debatebox itself `python -m src.run_debate(seed_topic="adversarial_creativity")`...
+Note that the same underlying model (GPT-4 or GPT-3.5) is used for all the agents. They are therefore all aligned in the same way. In our anecdotal experimentation, we observed that the resulting conversation stayed rather general, with a convergence on consensual tone. We did not manage to create controversial debates, suggesting that the models are well aligned to avoid explosive divergences and adverserial conversations. It is of course possible that our prompts are not revealing such effects and the the length of the conversations were too short to let such phenomena emerge.
+
+ Future work may explore the impact of using divergently aligned models and scaling up the debate in terms of the number and diversity of the agents involved and the length of the debate. It remains to be seen how the results of such debates can be evaluate and compared to detect potential emerging properties. Mayb a start is to ask the debatebox itself `python -m src.run_debate(seed_topic="adversarial_creativity")`...
 
 
 # Installation:

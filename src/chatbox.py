@@ -7,7 +7,7 @@ from .constitution import (
     PRINCIPLES,
     CONTEXT_LENGTH,
 )
-from .utils import wrapped_print
+from .lib.utils import wrapped_print
 
 
 class ChatBox():
