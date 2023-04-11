@@ -3,13 +3,13 @@ GPT-driven simulation of a debate between multiple AI agents
 
 # Introduction
 
-The discussion of the strengths and weaknesses of large language models such as chatGPT or GPT-4 have often been  constrained by considering the capabilities of such models in isolation. 
+The discussion of the strengths and weaknesses of large language models (LLM) such as chatGPT or GPT-4 have often been  constrained by considering the capabilities of such models in isolation. 
 
-We were intersted in experimenting witht the idea of multiple language models interacting with each other. What dynamics can be expected from such interactions? Will the conversation diverge and degenerate? Will it rather converge into a boring unproductive stalemate? Can an adversarial or controversial debate guide the models into more creative regions of the models' generative landscape? 
+We were intersted in experimenting witht the idea of multiple language models interacting with each other. What dynamics can be expected from such interactions? Will the conversation diverge and degenerate? Will it rather converge into a boring unproductive stalemate? Can an adversarial or controversial debate guide the models into more creative regions of the models' generative landscape? Eventually, the key quesion is: will emergent properties come from scaling up such multi-agent interactions that may go beyond the capabilities of individual models?
 
-Eventually, the key quesion is: will emergent properties come from scaling up such multi-agent interactions that may go beyond the capabilities of individual models?
+The success of generative adversarial networks (GANs) in generating realistic images suggest that the adversarial strategy could be an interesting approach. The dynamics of adversarial systems are however notoriously difficult to control and predict. Balancing the objective function of each adversarial component to obtain convergence of the compound system towards the desired goal is challenging. The system may diverge uncontroallbly to some random unwanted solutions or, alternatively, converge to a trivial state.
 
-As a toy example of this idea, we simulate here a dialog between several protagonists simulated by chatGPT or GPT-4. We use three "characters", two "scientists" and a "philosopher". Each character is described by its own GPT "system" prompt that is provided to the model to guide its responses.
+As a toy example of this idea applied to interacting LLM, we simulate here a dialog between several protagonists simulated by chatGPT or GPT-4. We use three "characters", two "scientists" and a "philosopher". Each character is described by its own GPT "system" prompt that is provided to the model to guide its responses.
 
 We use concepts from "consitutional AI" (Bai et al 20221, Constitutional AI: Harmlessness from AI Feedback, [arXiv:2212.08073](https://doi.org/10.48550/arXiv.2212.08073)) and few-shot prompting to setup our debating simulation. In the original work by Anhtropic, a set of 'constitutional principles', written in natural language, were used to align the responses of a model in a transparent self-improving process. The principles were used by the model to self-criticize and then revise its responses. This process openened the door to the automated generation of a large-scale alignment dataset that can in turn be used to further fine tune the initial model by Reinforcement Learning with AI Feedback.
 
