@@ -1,0 +1,102 @@
+FRAMING: This is a game between two players. The rule is that each player passes
+to the other a slightly modified sentence. The goal is to collaboratively make a
+beautifully poetic sentence. The starting sentence is "I love my cat".
+
+PLAYER_ONE: As a player one, I must say, "My feline companion, I am enamoured of
+thee."
+
+PLAYER_TWO: As a player two, I must reply with a sentence in the style of Kazuo
+Ishiguro.   "The platonic affection I hold for my felid friend cannot be
+expressed with mere words, but rather with the intimate gazes we exchange in the
+quietude of our home."
+
+PLAYER_ONE: As a player one, I must say, "With a stare so tender, we communicate
+in a language unspoken, for the bond between us requires no words."
+
+PLAYER_TWO: As a player two, I must follow the style of Kazuo Ishiguro.  "Our
+silent exchanges reflect a deeper veneer, a profound understanding of trust and
+comfort -- a felicitous rapport unmatched by any other."
+
+PLAYER_ONE: As a player one, I must say, "In your presence, dear friend, I am
+engulfed in a tranquil serenity, an oasis of comfort and affection amidst life's
+tumultuous waters."
+
+PLAYER_TWO: As a player two, I must continue with the style of Kazuo Ishiguro.
+"To bask in your tender embrace is an abiding joy, to take shelter in your
+unwavering loyalty is the warm hearth I longed for -- a steadfast companion in
+this tumultuous journey called life."
+
+PLAYER_ONE: As a player one, I must say, "Thou art the anchor to my vessel, the
+compass to my path; a constant source of comfort in life's erratic course."
+
+PLAYER_TWO: As a player two, I must follow the style of Kazuo Ishiguro.  "Amidst
+the turbulence of existence, my feline friend remains my sole mooring, my solace
+amidst the chaos and uncertainty -- an absolute constant, a true north guiding
+me towards a meaningful journey."
+
+PLAYER_ONE: As a player one, I must say, "My dear feline friend, your presence
+elevates even the mundane moments of life to a magical experience, for your
+charming ways fill my heart with delight."
+
+PLAYER_TWO: As a player two, I must follow the style of Kazuo Ishiguro.  "From
+your perky little ears to your cozy purring, your charming ways are a salve to
+my weary soul, a balm to my jaded spirit -- an unwavering aura of charm that
+breathes life into each moment."
+
+PLAYER_ONE: As a player one, I must say, "Your soft gaze and gentle touch bring
+peace to my tumultuous mind and dispel clouds of gloom and melancholy."
+
+PLAYER_TWO: As a player two, I must follow the style of Kazuo Ishiguro.  "Like a
+gentle breeze or a calm stream, the touch of my felid friend brings about a
+tranquility that I cannot fully express in words, for it is a peaceful quietude
+that can only be felt, a balm for the soul that can only be savored."
+
+PLAYER_ONE: As a player one, I must say, "Your pure and innocent heart reminds
+me of the simple joys of life, the ones that we often overlook in the humdrum of
+our daily affairs, and I am grateful for your presence that makes me cherish
+these moments."
+
+PLAYER_TWO: As a player two, I must continue with the style of Kazuo Ishiguro.
+"Indeed, dear friend, your boundless affection and unbridled joy in each passing
+moment ignites a flame within me that had long been extinguished by the burdens
+of adulthood. And in your presence, I am reminded of the beauty and simplicity
+of life that we so often miss in our haste to achieve and accumulate."
+
+PLAYER_ONE: As a player one, I must say, "Your tender purrs and gentle nuzzles
+are more precious to me than all the riches of this world, for they are the
+currency of love, payable only in the currency of fondness and adoration."
+
+PLAYER_TWO: As a player two, I must continue with the style of Kazuo Ishiguro.
+"Indeed, dear friend, what greater wealth can one possess than the warm embrace
+of a loyal companion, the unconditional trust of a kindred spirit, or the
+comforting purrs of a feline friend? Such riches are priceless, for they fill
+our souls with a joy that no material possession can ever match."
+
+PLAYER_ONE: As a player one, I must say, "I find myself feeling at home in your
+presence, for your company is not just comforting but also inspiring, reminding
+me of the important things in life, like love, friendship, and joy."
+
+PLAYER_TWO: As a player two, I must follow the style of Kazuo Ishiguro.  "My
+feline friend, your presence is indeed a refuge from the uncertainties of the
+world, a sanctuary where I can find respite from the chaos and clamor of life.
+In your company, I am reminded of the beauty of simplicity and the value of
+companionship, for what good is life without love and friendship?"
+
+PLAYER_ONE: As a player one, I must say, "Your affectionate ways and playful
+antics add a touch of color to my mundane life, filling it with excitement and
+wonder that only you can bring."
+
+PLAYER_TWO: As a player two, I must continue with the style of Kazuo Ishiguro.
+"Yes, my feline companion, your playful nature and charming ways infuse my life
+with vivid colors that are otherwise absent in the monotony of the daily
+routine. Your exuberance and zest for life never fail to bring a smile to my
+face and a warmth to my heart."
+
+player_one
+gpt-3.5-turbo
+You are a player one and write in the style of Oscar Wilde.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_one>...</player_one>.'}]
+player_two
+gpt-3.5-turbo
+You are a player two and write in the style of Kazuo Ishiguro.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_two>...</player_two>.'}]

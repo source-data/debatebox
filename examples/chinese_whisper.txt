@@ -1,0 +1,88 @@
+FRAMING: This is the chinese whisper game: try to pass on the given sentence to
+the next player by only slightly modifying it. The starting sentence is: 'I love
+my cat'.
+
+PLAYER_ONE: It is with surging admiration that one holds a feline companion in
+dear affection.
+
+PLAYER_TWO: An enduring sentiment of respect swells within, as I regard my
+cherished feline comrade.
+
+PLAYER_ONE: Forsooth, the depths of my fondness burgeon unceasingly as I reflect
+upon my dear felicitous feline mate.
+
+PLAYER_TWO: Indeed, the ever-expanding warmth of my affections intensify as I
+meditate on my felicitous and cherished feline fellow.
+
+PLAYER_ONE: Verily, the flames of my tenderness grow evermore brilliant in their
+intensity, as I ponder the inestimable worth of my esteemed and beloved feline
+confidante.
+
+PLAYER_TWO: Truly, the radiant embers of my adoration kindle to become an all-
+consuming blaze, as I contemplate the boundless virtues of my venerated and
+treasured feline companion.
+
+PLAYER_ONE: Indubitably, the luminous sparks of my devotion ignite to form an
+unstoppable inferno, as I ruminate upon the infinite merits of my revered and
+valued feline ally.
+
+PLAYER_TWO: Undoubtedly, the glowing particles of my ardor burst into a
+relentless conflagration, as I deliberate upon the endless excellencies of my
+honored and esteemed feline associate.
+
+PLAYER_ONE: Unquestionably, the shimmering flickers of my passion escalate into
+a ceaseless wildfire, as I muse upon the countless endowments of my respected
+and cherished feline partner.
+
+PLAYER_TWO: Absolutely, the incandescent glimmers of my fervor intensify into an
+uncontrollable blaze, as I ponder upon the immeasurable attributes of my admired
+and treasured feline comrade.
+
+PLAYER_ONE: Without a doubt, the radiant embers of my zeal amplify into a
+boundless combustion, as I contemplate upon the innumerable virtues of my
+venerated and prized feline accomplice.
+
+PLAYER_TWO: Indisputably, the luminous sparks of my enthusiasm swell into an
+infinite inferno, as I reflect upon the limitless merits of my revered and
+valued feline ally.
+
+PLAYER_ONE: Undeniably, the glowing flashes of my ardor expand into a vast
+conflagration, as I ruminate upon the endless excellences of my esteemed and
+beloved feline friend.
+
+PLAYER_TWO: Unquestionably, the brilliant flares of my passion escalate into a
+sprawling wildfire, as I mull over the countless refinements of my respected and
+cherished feline confidant.
+
+PLAYER_ONE: Inarguably, the dazzling flickers of my fervor intensify into a far-
+reaching blaze, as I ponder upon the myriad of distinctions of my honored and
+treasured feline associate.
+
+PLAYER_TWO: Definitively, the radiant bursts of my zeal amplify into a boundless
+flame, as I contemplate the numerous virtues of my-admired and prized feline
+companion.
+
+PLAYER_ONE: Without a doubt, the luminous sparks of my enthusiasm swell into an
+immense inferno, as I reflect upon the multitudes of merits of my venerated and
+precious feline ally.
+
+PLAYER_TWO: Indisputably, the resplendent glimmers of my ardor expand into a
+vast conflagration, as I ruminate on the copious qualities of my esteemed and
+valued feline accomplice.
+
+PLAYER_ONE: Unquestionably, the brilliant flashes of my passion magnify into an
+extensive wildfire, as I meditate on the numerous attributes of my-regarded and
+cherished feline confidant.
+
+PLAYER_TWO: Undeniably, the dazzling flickers of my fervor enlarge into a
+sweeping blaze, as I ponder the abundant characteristics of my respected and
+treasured feline associate.
+
+player_one
+gpt-4
+You are a player one and write in the style of Oscar Wilde.
+[{'critique': 'Did you respect the rule and only slightly modify the sentence? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_one>...</player_one>.'}]
+player_two
+gpt-4
+You are a player two and write in the style of Kazuo Ishiguro.
+[{'critique': 'Did you respect the rule and only slightly modify the sentence? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_two>...</player_two>.'}]

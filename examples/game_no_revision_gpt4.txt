@@ -1,0 +1,147 @@
+FRAMING: This is a game between two players. The rule is that each player passes
+to the other a slightly modified sentence. The goal is to collaboratively make a
+beautifully poetic sentence. The starting sentence is "I love my cat".
+
+PLAYER_ONE: Oh, how deeply I cherish that refined creature of feline grace, my
+beloved cat.
+
+PLAYER_TWO: In the depths of my soul, I hold close the elegant embodiment of
+feline refinement, my adored companion of whiskered mystique.
+
+PLAYER_ONE: With the most profound affection, I embrace the exquisite symphony
+of feline sophistication and charm, that enigmatic and captivating orchestrator
+of playful whiskers, my cherished confidant.
+
+PLAYER_TWO: Enshrouded within the innermost sanctum of my heart, I tenderly
+cradle that living masterpiece of intricate feline artistry, a creature of
+enigmatic allure and beguiling furriness, so deserving of reverence, that
+closest of confidants upon whom my love is lavished.
+
+PLAYER_ONE: In the hallowed corners of my heart's secret garden, there blossoms
+an unwavering devotion to the bewitching fur-clad enchantress, a feline muse of
+unparalleled elegance and charming mystery, a most divine confederate to whom my
+love is forever pledged as a tribute of unfettered admiration.
+
+PLAYER_TWO: Submerged in the arcane chambers of my heart's hidden oasis, the
+perennial bloom of fidelity most ardent grows for that bewitching sorceress
+enrobed in luxurious fur, a feline paragon of incomparable finesse and
+spellbinding enigma, my consecrated ally, an unwavering and ever-enduring homage
+to our shared, unspoken amity.
+
+PLAYER_ONE: Entwined within the labyrinthine recesses of my ardently devoted
+soul lies an esoteric abode for the mesmerizing enchantress adorned in opulent
+pelage, a preeminent feline apotheosis emanating an entrancing air of ineffable
+mystique; united in sacred alliance, our hearts reverberate to the celestial
+harmony of an eternal and unspoken pact that has transcended the boundaries of
+merely transient affection.
+
+PLAYER_TWO: Immersed in the intricate tapestry of my soul's innermost sanctum,
+resides a clandestine sanctuary devoted to the enthralling sorceress of
+celestial origin, cloaked in her resplendent coat of fur; that peerless
+embodiment of feline grace and transcendent enigma we hold sacred, our
+intermingled spirits dance upon the edge of ephemeral adoration, ever bound by a
+silent covenant that defies the constraints of time and fleeting passions.
+
+PLAYER_ONE: Serenely nestled amid the baroque intricacies of my innermost being,
+an arcane shrine dedicates itself to the ravishing sorceress hailing from
+celestial realms, swathed in her magnificent mantle of fur; that matchless
+paragon of feline majesty and ethereal riddles whom we exalt, our interwoven
+souls pirouetting at the threshold of evanescent devotion, everlastingly united
+by an unsung compact that transcends the ephemeral bonds of heart and fancy.
+
+PLAYER_TWO: In the tranquil embrace of my soul's ornate tapestry, a hidden
+sanctum consecrates a breathtaking enigma, the ethereal sorceress from
+otherworldly spheres, arrayed in a resplendent fur-cloaked panoply; that
+unparalleled epitome of feline grandeur and transcendental conundrums whom we
+venerate, our souls interlaced in an harmonious waltz on the precipice of
+temporal admiration, eternally bound by a wordless covenant transcending both
+the transient ties of affection and whimsical captivation.
+
+PLAYER_ONE: Enveloped within the intricate embroidery of my soul's innermost
+fabric, a secret sanctuary enshrines the bewitching enigma of the celestial
+sorceress, arrayed in her sumptuous fur-cloaked vestments; the inimitable
+exemplar of feline magnificence and mystifying enigmas whom we revere, our
+intertwined spirits dancing in sublime harmony at the cusp of evanescent
+adoration, perpetually fastened by a silent pact surpassing both the fleeting
+bonds of tender emotion and capricious fascination.
+
+PLAYER_TWO: Intertwined within the elaborate mosaic of my essence's core, a
+secluded haven venerates the dazzling riddle of the astral enchantress, clad in
+her luxurious fur-adorned attire; the peerless archetype of feline splendor and
+inscrutable conundrums whom we exalt, our conjoined souls performing a symphony
+of blissful unity at the brink of evanescent infatuation, eternally tethered by
+a mute accord outstripping both the ephemeral connections of heartfelt sentiment
+and mercurial enchantment.
+
+PLAYER_ONE: Entwined within the intricate labyrinth of my soul's most profound
+depths, a hidden sanctuary adores the enigmatic siren of the celestial realm,
+girded in her lavish fur-embellished raiment; the unparalleled exemplar of
+feline resplendence and cryptic conundrums whom we glorify, our harmoniously
+interlinked spirits pirouetting along the precipice of transient ardor,
+inextricably bound by a tacit covenant transcending both the evanescent bonds of
+sentimental yearning and the fleeting dalliance of mercurial allure.
+
+PLAYER_TWO: Nestled within the complex matrix of my spirit's innermost sanctum,
+a concealed haven reveres the mystifying enchantress from the celestial sphere,
+garbed in her opulent fur-decked vestments; the quintessential embodiment of
+feline radiance and enigmatic riddles whom we exalt, our entwined souls grace
+the delicate threshold of transitory passion, eternally interlaced by an
+unspoken pact that surpasses both the momentary ties of tender affection and the
+ephemeral enticements of capricious fascination.
+
+PLAYER_ONE: Embraced within the elaborate tapestry of my soul's deepest
+recesses, a secret refuge worships the enigmatic sorceress from the celestial
+plane, donning her sumptuous fur-adorned attire; the ultimate paragon of feline
+luminescence and arcane conundrums to whom we pay homage, our souls, united in a
+harmonious dance at the edge of ephemerally ephemeral ardor, enduringly entwined
+by a wordless covenant eclipsing both the fleeting bonds of heartfelt devotion
+and the transient temptations of mercurial enchantment.
+
+PLAYER_TWO: Encased within the ornate puzzle of my innermost spirit, a concealed
+sanctuary extols the captivating sorceress stemming from the heavenly realm,
+bedecked in her resplendent fur-clad garments; the consummate exemplar of feline
+brilliance and inscrutable enigmas whom we laud, our interwoven souls poised
+gracefully at the verge of ephemeral passion, ceaselessly intertwined through a
+silent accord surpassing both the transient embrace of heartfelt allegiance and
+the evanescent allure of whimsical enthrallment.
+
+PLAYER_ONE: Embedded within the intricate web of my soul's most intimate
+chambers, a cloistered refuge exalts the beguiling enchantress of divine origin,
+arrayed in her magnificent fur-imbued attire; the apotheosis of feline splendor
+and impenetrable riddles whom we venerate, our harmoniously entangled spirits
+poised elegantly on the cusp of fleeting ardor, perpetually bound by an unvoiced
+pact that transcends both the evanescent bonds of earnest fidelity and the
+temporal seductions of capricious bewitchment.
+
+PLAYER_TWO: Enshrouded within the elaborate intricacies of my spirit's inner
+sanctum, a secluded abode venerates the mesmerizing conjurer from the celestial
+echelon, adorned in her luxuriant fur-laden garb; the zenith of feline nobility
+and inscrutable mysteries whom we extol, our symbiotic souls delicately balanced
+at the threshold of vanishing rapture, unendingly entwined by a tacit alliance
+surpassing both the fleeting embrace of sincere loyalty and the ephemeral lures
+of mercurial enchantment.
+
+PLAYER_ONE: Cradled within the complex labyrinth of my innermost essence, a
+hidden retreat pays reverence to the bewitching siren of the celestial sphere,
+draped in her lavish fur-enveloped finery; the epitome of feline prestige and
+enigmatic quandaries whom we admire, our reciprocally linked essences elegantly
+perched on the brink of transient ecstasy, interminably conjoined by a muted
+pact that transcends both the evanescent bonds of unswerving devotion and the
+momentary allurements of capricious spellbinding.
+
+PLAYER_TWO: Enclosed within the elaborate fabric of my deepest spiritual core, a
+sheltered sanctuary honors the enthralling mystic of the heavenly domain,
+arrayed in her opulent fur-enrobed attire; the paragon of feline eminence and
+inscrutable dilemmas whom we revere, our companionably entwined souls poised
+gracefully on the precipice of evanescent rapture, indissolubly connected by a
+wordless covenant that surpasses both the transitory ties of unwavering
+commitment and the fleeting allure of mercurial mesmerism.
+
+player_one
+gpt-4
+You are a player one and write in the style of Oscar Wilde.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_one>...</player_one>.'}]
+player_two
+gpt-4
+You are a player two and write in the style of Kazuo Ishiguro.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_two>...</player_two>.'}]

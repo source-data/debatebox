@@ -1,0 +1,102 @@
+FRAMING: This is a game between two players. The rule is that each player passes
+to the other a slightly modified sentence. The goal is to collaboratively make a
+beautifully poetic sentence. The starting sentence is "I love my cat".
+
+PLAYER_ONE: <player_one>Indeed, my heart finds itself undeniably captivated by
+the delightful presence of the genteel, whiskered being in my
+domicile.</player_one>
+
+PLAYER_TWO: <player_two>Verily, the gentle chamber of my ever-throbbing heart
+sways to the sweet allure of the sophisticated, whiskered companion residing
+within my humble abode.</player_two>
+
+PLAYER_ONE: <player_two>My ardent heart finds no reprieve as it gracefully
+waltzes to the entrancing charm of the refined, whiskered intimate who inhabits
+the comforting embrace of my unpretentious dwelling.</player_two>
+
+PLAYER_TWO: My apologies for misunderstanding earlier. Here is a slightly
+modified version of the previous sentence from player one:  <player_two>Truly,
+my fervent heart finds no solace as it delicately waltzes to the enthralling
+grace of the cultivated, whiskered companion who resides within the calming
+sanctuary of my modest dwelling.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my passionate heart uncovers not a shred of
+respite as it deftly pirouettes to the beguiling sophistication of the polished,
+whiskered confrère who dwells in the tranquil refuge of my understated
+domicile.</player_two>
+
+PLAYER_TWO: My apologies for misunderstanding earlier. Here is a slightly
+modified version of the previous sentence from player one:  <player_two>Indeed,
+my fervent heart unveils no hint of reprieve as it skillfully twirls to the
+captivating elegance of the urbane, whiskered associate who resides in the
+peaceful sanctuary of my modest home.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my impassioned heart discloses no hint of solace
+as it adroitly spins to the enchanting cultivation of an elegant, whiskered
+confidante who inhabits the calming retreat of my humble residence.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my impassioned heart uncovers no clue of solace
+as it expertly twirls to the alluring sophistication of a debonair, whiskered
+friend who dwells in the comforting haven of my plain dwelling.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart discloses no hint of relief as
+it gracefully swirls to the appealing refinement of a stylish, whiskered
+acquaintance who inhabits the calming refuge of my unpretentious
+residence.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart reveals no sign of comfort
+as it smoothly swirls to the charming sophistication of a polished, whiskered
+comrade who dwells in the tranquil haven of my unassuming abode.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart exposes no trace of relief as
+it stylishly twirls to the captivating polish of a urbane, whiskered
+collaborator who inhabits the placid retreat of my unpretentious
+domicile.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart discloses no indication of
+reprieve as it gracefully whirls to the mesmerizing sophistication of an
+elegant, whiskered ally who dwells in the calming haven of my unassuming
+abode.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart unveils no trace of a break as
+it elegantly twirls to the enthralling finesse of a cultured, whiskered friend
+who inhabits the pacifying retreat of my modest abode.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart uncovers no sign of relief
+as it gracefully spins to the alluring polish of a dapper, whiskered associate
+who dwells in the calming haven of my humble home.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart reveals no suggestion of
+comfort as it elegantly turns to the enchanting sophistication of a suave,
+whiskered ally who inhabits the serene shelter of my modest abode.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart unveils no trace of reprieve
+as it tastefully spins to the alluring refinement of a sophisticated, whiskered
+associate who resides in the serene haven of my modest dwelling.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart reveals no indication of relief
+as it skillfully rotates to the beguiling sophistication of an urbane, whiskered
+comrade who inhabits the peaceful haven of my understated abode.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart reveals no sign of solace as
+it gracefully swirls to the captivating refinement of a refined, whiskered
+companion who inhabits the soothing haven of my unassuming
+dwelling.</player_two>
+
+PLAYER_ONE: <player_two>Indeed, my fervent heart unveils no trace of reprieve as
+it gracefully twirls to the alluring sophistication of a debonair, whiskered
+friend who resides in the serene refuge of my unpretentious abode.</player_two>
+
+PLAYER_TWO: <player_two>Indeed, my passionate heart reveals no sign of comfort
+as it stylishly revolves to the entrancing sophistication of a debonair,
+whiskered companion who occupies the serene haven of my unassuming
+residence.</player_two>
+
+player_one
+gpt-4
+You are a player one and write in the style of Oscar Wilde.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_one>...</player_one>.'}]
+player_two
+gpt-4
+You are a player two and write in the style of Kazuo Ishiguro.
+[{'critique': 'Did you respect the rule of the game? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_two>...</player_two>.'}]

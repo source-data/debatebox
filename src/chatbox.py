@@ -1,14 +1,26 @@
 from typing import List, Dict
 import openai
+import logging
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 
-from .constitution import (
+from .config import (
     MODEL,
     CHARACTERS,
     PRINCIPLES,
-    CONTEXT_LENGTH,
+    DEFAULT_CONTEXT_LENGTH,
 )
 from .lib.utils import wrapped_print
+
+# setp basic logging to file
+logging.basicConfig(
+    filename="/log/chatbox.log",
+    filemode='a',
+    format='%(asctime)s %(levelname)s:%(message)s',
+    datefmt='%m/%d/%y %I:%M:%S',
+    level=logging.DEBUG
+)
+logging.info("Chatbox log")
+logger = logging.getLogger('ChatBox')
 
 
 class ChatBox():
@@ -16,7 +28,7 @@ class ChatBox():
     model: str = MODEL
     engine = openai.ChatCompletion
 
-    def __init__(self, model: str = MODEL, character: str = "", verbose: bool = False):
+    def __init__(self, model: str = MODEL, character: str = "", verbose: bool = False, context_length: int = DEFAULT_CONTEXT_LENGTH):
         self.model = model
         self.character = character
         self.principles: List[Dict[str, str]] = PRINCIPLES[self.character]
@@ -24,7 +36,7 @@ class ChatBox():
         self.chat = [
             {"role": "system", "content": self.system_content},
         ]
-        self.context_length = CONTEXT_LENGTH  # forwared only last N entries of the chat otherwise quickly running out of tokens
+        self.context_length = context_length  # forwared only last N entries of the chat otherwise quickly running out of tokens
         self.verbose = verbose  # whether the inner critique and revisions are displayed
 
     def reply(self, user_msg: Dict[str, str], steps: List[str] = ["critique", "revision"]):
@@ -41,6 +53,7 @@ class ChatBox():
         # figure out the entry point in the chat to provide context
         idx = max(len(self.chat) - self.context_length, 0)
         context = self.chat[idx:]
+        logger.debug(f"Sending context to {self.model}: {context}")
         response = self.call_model(context)
         # extract the content of the response
         content = self.process_response(response)  # type: ignore
@@ -92,3 +105,16 @@ class ChatBox():
 
     def append_to_chat(self, message: Dict[str, str]):
         self.chat.append(message)
+        logger.debug(f"Appending message: {message}")
+
+    def to_dict(self):
+        json_dict = {
+            "model": self.model,
+            "context_length": self.context_length,
+            "verbose": self.verbose,
+            "character": self.character,
+            "principles": self.principles,
+            "system_content": self.system_content,
+            "chat": self.chat,
+        }
+        return json_dict

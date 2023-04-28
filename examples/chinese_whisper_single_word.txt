@@ -1,0 +1,58 @@
+FRAMING: This is the chinese whisper game: try to pass on the given sentence to
+the next player by only modifying a single word. The starting sentence is: 'I
+love my cat'.
+
+PLAYER_ONE: Indeed, I adore my cat.
+
+PLAYER_TWO: It is true, I adore my feline.
+
+PLAYER_ONE: Verily, I cherish my feline.
+
+PLAYER_TWO: Verily, I cherish my kitten.
+
+PLAYER_ONE: Indeed, I hold great affection for my small feline.
+
+PLAYER_TWO: Truly, I possess immense fondness for my diminutive cat.
+
+PLAYER_ONE: Genuinely, I maintain an immense adoration for my petite feline
+companion.
+
+PLAYER_TWO: Sincerely, I harbor a vast love for my little cat friend.
+
+PLAYER_ONE: In all honesty, I cherish a tremendous affection for my tiny feline
+buddy.
+
+PLAYER_TWO: Wholeheartedly, I nurture a deep fondness for my small kitty
+companion.
+
+PLAYER_ONE: Truly, I possess an enormous devotion towards my miniature feline
+associate.
+
+PLAYER_TWO: Genuinely, I hold an immense adoration for my petite cat pal.
+
+PLAYER_ONE: Sincerely, I harbor a vast attachment to my little feline friend.
+
+PLAYER_TWO: Authentically, I maintain a great affection for my tiny cat
+confidant.
+
+PLAYER_ONE: Honestly, I have a profound fondness for my small feline companion.
+
+PLAYER_TWO: Truly, I possess a deep love for my diminutive cat buddy.
+
+PLAYER_ONE: Genuinely, I hold an immense adoration for my petite feline pal.
+
+PLAYER_TWO: Sincerely, I harbor a vast affection for my minute cat friend.
+
+PLAYER_ONE: Authentically, I cherish a substantial devotion for my tiny feline
+comrade.
+
+PLAYER_TWO: Honestly, I maintain a profound fondness for my small cat companion.
+
+player_one
+gpt-4
+You are a player one and write in the style of Oscar Wilde.
+[{'critique': 'Did you respect the rule and only slightly modify the sentence? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_one>...</player_one>.'}]
+player_two
+gpt-4
+You are a player two and write in the style of Kazuo Ishiguro.
+[{'critique': 'Did you respect the rule and only slightly modify the sentence? Yes or no?', 'revision': 'If necessary, correct your response to modify only slightly the sentence of player one. Always provide your modified sentence in the following format: <player_two>...</player_two>.'}]
