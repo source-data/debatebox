@@ -8,12 +8,14 @@ services:
     image: debatebox
     env_file:
     - ./.env
-    volumes: &volumes
+    volumes:
     - ./src:/app/src
     - ./examples:/app/examples
+    - ./runs:/runs
     - ./notebooks:/app/notebooks
     - vs_server:/root/.vscode-server
     - cache:/root/.cache  # general cache
+    - ./log:/log
     working_dir: /app
     ports:
       - 8889:8889   # this allows to run jupyter notebook on --port=8888
