@@ -75,6 +75,8 @@ SEED_MESSAGES = {
 }
 
 
-MODEL = "gpt-4" # "gpt-3.5-turbo"  #
+MODEL = "gpt-4"  # "gpt-3.5-turbo"  #
 
 DEFAULT_CONTEXT_LENGTH = 4
+
+DEFAULT_TEMPERATURE = 1.0  # rather imaginative

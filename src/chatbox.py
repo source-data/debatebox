@@ -8,6 +8,7 @@ from .config import (
     CHARACTERS,
     PRINCIPLES,
     DEFAULT_CONTEXT_LENGTH,
+    DEFAULT_TEMPERATURE,
 )
 from .lib.utils import wrapped_print
 
@@ -28,7 +29,14 @@ class ChatBox():
     model: str = MODEL
     engine = openai.ChatCompletion
 
-    def __init__(self, model: str = MODEL, character: str = "", verbose: bool = False, context_length: int = DEFAULT_CONTEXT_LENGTH):
+    def __init__(
+        self,
+        model: str = MODEL,
+        character: str = "",
+        verbose: bool = False,
+        context_length: int = DEFAULT_CONTEXT_LENGTH,
+        temperature: float = DEFAULT_TEMPERATURE,
+    ):
         self.model = model
         self.character = character
         self.principles: List[Dict[str, str]] = PRINCIPLES[self.character]
@@ -37,6 +45,7 @@ class ChatBox():
             {"role": "system", "content": self.system_content},
         ]
         self.context_length = context_length  # forwared only last N entries of the chat otherwise quickly running out of tokens
+        self.temperature = temperature  # 0.0 is deterministic, 1.0 is random
         self.verbose = verbose  # whether the inner critique and revisions are displayed
 
     def reply(self, user_msg: Dict[str, str], steps: List[str] = ["critique", "revision"]):
@@ -67,7 +76,9 @@ class ChatBox():
     def call_model(self, context: List[Dict[str, str]]):
         response = self.engine.create(
             model=self.model,
-            messages=context
+            messages=context,
+            temperature=self.temperature,
+            # max_tokens=1
         )
         return response
 

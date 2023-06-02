@@ -10,7 +10,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_rounds", type=int, default=1, help="The maximum number of rounds of debating.")
     parser.add_argument("--steps", type=str, nargs="+", default=[], help="The steps of the debate (default 'critique revision')")
     parser.add_argument("--verbose", default=False, action="store_true", help="Whether to print the internal working of the critique/revision steps (default False).")
-    parser.add_argument("--protagonists", type=str, nargs="+", default=["assistant_one", "assistant_two"], help="The protagonists of the debate (default 'scientist_one scientist_two demagogue philosopher moderator').")
+    parser.add_argument("--protagonists", type=str, nargs="+", default=["scientist_one", "scientist_two"], help="The protagonists of the debate (default 'scientist_one scientist_two').")
     parser.add_argument("--run_dir", type=str, default="/runs", help="The directory where to save the run (default '/runs').")
     parser.add_argument("--context_length", type=int, default=DEFAULT_CONTEXT_LENGTH, help="The number of messages to use as context (default 4).")
     parser.add_argument('--mode', type=str, choices=["sequential", "random_no_repeat", "random_with_replacement"], default="sequential", help="The mode of the debate (default 'sequential').")
